@@ -5,7 +5,7 @@ except ImportError:
     from urllib.parse import urlunparse
 
 from django.conf import settings
-from django.urls import reverse
+from django.urls import reverse as simple_reverse
 
 
 

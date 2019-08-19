@@ -1,0 +1,703 @@
+[33mcommit 69924bbe8ab3fe09baf38b30372e1aea1919daa0[m
+Author: digvijay-17 <digvijay.singh@joshtechnologygroup.com>
+Date:   Mon Aug 19 18:05:28 2019 +0530
+
+    Upgrading to django 2.2
+
+[33mcommit be6cc1c556a2007287ef4e647ea1784cf7690a44[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Fri Apr 29 16:20:57 2016 +0200
+
+    2.1.0
+
+[33mcommit db7f08db7586ba7b4f713aebb83daf2621edde6b[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Wed Dec 16 21:15:15 2015 -0800
+
+    2.1.0rc0
+
+[33mcommit 6737a7f5eb3550d8359586cb5b61e6a418cb00bd[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Wed Dec 16 21:04:59 2015 -0800
+
+    Python 3 compatibility for 42280f6f25f77de14ed4439322c2fe79c1f6e5d8.
+
+[33mcommit e7eaa4338476a3146ac6daadba91ef74b0d03e32[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Wed Dec 16 20:54:51 2015 -0800
+
+    Fix test due to change in `CommonMiddleware` in Django 1.9.
+    
+    References GH-46, GH-51.
+
+[33mcommit 3306279c75f6c0ff4b2350c87354e665874ffbb3[m
+Author: Petr Dlouhý <petr.dlouhy@email.cz>
+Date:   Thu Dec 17 05:16:22 2015 +0100
+
+    fix Apps not ready error in Django 1.9
+
+[33mcommit d4213facaa08c26b031b4c7718aa62ac245929e0[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Wed Dec 16 18:30:24 2015 -0800
+
+    Remove compatibility backports.
+
+[33mcommit 2f19f24f114d3ea977dcf8806ca2c95fce2abc34[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Wed Dec 16 18:08:53 2015 -0800
+
+    Only show build status of master branch.
+
+[33mcommit c594cf832eaac6855869525fb6d207a2aad8ec8b[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Wed Dec 16 18:04:18 2015 -0800
+
+    Add development distribution to test matrix.
+
+[33mcommit 5665540771fe10dedeb000ea8b1cb5ce0d4183ef[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Wed Dec 16 18:01:06 2015 -0800
+
+    Update documentation.
+
+[33mcommit 6c7cbc00c1b071bee515d88332ec747d62769e27[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Wed Dec 16 17:58:43 2015 -0800
+
+    Test against Python 3.5 where applicable.
+
+[33mcommit 43d1a3d9278b885c00ab4b5c1e51bbddb6af26e2[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Wed Dec 16 17:54:51 2015 -0800
+
+    Add Python 3.4 to tox matrix.
+    
+    This is follow up for GH-44.
+
+[33mcommit 5c501edcbc28d1e42c8a928a783066519eba6a31[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Wed Dec 16 17:51:06 2015 -0800
+
+    Test against Python 3.4.
+    
+    Fixes GH-44.
+    
+    Squashed commit of the following:
+    
+    commit 339b6b6d7afd7755198d66033d2ecbf44c594bc4
+    Author: Fabian Fuelling <fabian@fabfuel.de>
+    Date:   Mon Jun 1 08:00:54 2015 +0200
+    
+        Fix travis exclude syntax
+    
+    commit 19a2fff913c792dd4f331e0e72f971fe738c0ac2
+    Author: Fabian Fuelling <fabian@fabfuel.de>
+    Date:   Mon Jun 1 07:58:31 2015 +0200
+    
+        Exclude Django < 1.7 from Python 3.4 and fix Python 3 incompatible tests
+    
+    commit f30c316c9fd0c8ce2c72a8cfc11612e15766fdba
+    Author: Fabian Fuelling <fabian@fabfuel.de>
+    Date:   Mon Jun 1 07:47:22 2015 +0200
+    
+        Fix travis exclude syntax
+    
+    commit e103316d35cc91357a5b73820a02336bb72a671f
+    Author: Fabian Fuelling <fabian@fabfuel.de>
+    Date:   Mon Jun 1 07:43:43 2015 +0200
+    
+        Add Python3 and Django 1.6, 1.7, 1.8 to travis.yml
+    
+    commit 9fa31b7b825eaaa405ab74a9729e240d11377b93
+    Author: Fabian Fuelling <fabian@fabfuel.de>
+    Date:   Fri May 22 07:01:09 2015 +0200
+    
+        Push version to 2.1.0 (python3 support)
+
+[33mcommit 03dfd686345eb75cdc5e7f969ef5158627a77b29[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Wed Dec 16 17:37:59 2015 -0800
+
+    Drop support for Django prior to 1.4.
+    
+    Fixes GH-50.
+    
+    Squashed commit of the following:
+    
+    commit 8bb9c715449849f7e3a70e14e9bf683cbc1922fb
+    Author: Gavin Wahl <gwahl@fusionbox.com>
+    Date:   Fri Dec 11 15:09:36 2015 -0700
+    
+        Drop support for Django 1.3
+    
+        This is necessary because the backported simple_tag implementation
+        doesn't support Python 3. Django 1.3 is long out of support so this
+        shouldn't matter.
+
+[33mcommit 0e4b924c632e50482f3ee9ef0596c4a27bf17d8a[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Wed Dec 16 17:14:11 2015 -0800
+
+    Update build matrix to account test up to Django 1.9.
+    
+    This also switches to a generative test configuration.
+    
+    This does not test against Python 3.X yet (maybe later.)
+    
+    Fixes GH-37, GH-41.
+    
+    References GH-44.
+
+[33mcommit 7c57f0257dc1aaae7118f291e729f44ca3883532[m
+Merge: e2bc92a 9e5fc61
+Author: ted kaemming <t.kaemming+github@gmail.com>
+Date:   Fri Jan 10 10:35:11 2014 -0800
+
+    Merge pull request #26 from jonasvp/python3_import
+    
+    Fix urlparse import for Python3
+
+[33mcommit 9e5fc6107b65896bbeb2ae75fc3dda0026c4d5e3[m
+Author: Jonas <jvp@jonasundderwolf.de>
+Date:   Fri Jan 10 14:27:05 2014 +0100
+
+    Fix urlparse import for Python3
+
+[33mcommit e2bc92aa01eede1b098ae4eaa7e6804f4962e7c6[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Fri Jul 5 16:42:57 2013 -0700
+
+    Don't build against Django master to avoid transient failures.
+    
+    Start building on Django 1.5 as well
+
+[33mcommit 22e78c1b0c9c8bb2e287ae734ee0212e24ff8291[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Fri Jul 5 15:01:53 2013 -0700
+
+    Documentatation touchup
+
+[33mcommit 31fe9ab690ac158a049656586f223971d7e08724[m
+Merge: cc8f513 7bd3097
+Author: ted kaemming <t.kaemming+github@gmail.com>
+Date:   Fri Jul 5 14:59:53 2013 -0700
+
+    Merge pull request #22 from briandant/patch-1
+    
+    Adds #4 in quickstart: Add to INSTALLED_APPS.
+
+[33mcommit 7bd3097acd33f3a497285b630fa78e9d36c6ee47[m
+Author: Brian Dant <briandant414@gmail.com>
+Date:   Tue Jul 2 09:07:28 2013 -0400
+
+    Adds #4 in quickstart: Add to INSTALLED_APPS.
+    
+    Simply tells the user to add 'subdomains' to INSTALLED_APPS if they want to use the {% url %} tag.
+
+[33mcommit cc8f513fd76a3cddb0231f19e7964618de7943f4[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Mon Jun 24 11:33:17 2013 -0700
+
+    2.0.4
+
+[33mcommit 32315fcabe4a1c0a6d259740d2e67e426413890c[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Mon Jun 24 11:32:40 2013 -0700
+
+    Correct order of middleware in documentation.
+    
+    Fixes #8
+
+[33mcommit 7619433fe236c8d706f3932dfaae209561acd7dc[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Tue Feb 19 17:23:05 2013 -0800
+
+    2.0.3
+
+[33mcommit ca564ee11d59391bf9613c1ba45dff2fd8190cbf[m
+Merge: f4eeb01 0a93c32
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Tue Feb 19 17:22:19 2013 -0800
+
+    Merge pull request #19 from cmsimike/master
+    
+    When using REMOVE_WWW_FROM_DOMAIN to remove www from Site.domain, reversing URLs in templates fails
+
+[33mcommit 0a93c32c7388a7ef75f90068cb8a2feedbf1f80d[m
+Author: Mike Megally <cmsimike@gmail.com>
+Date:   Mon Feb 18 21:31:12 2013 -0800
+
+    Moved the logic to remove www from Site.domain into current_site_domain to fix issues reversing URLs when Site.domain has a www.
+
+[33mcommit f4eeb0184ff1a9ec65fe9717ffc1f8f266a4fb3e[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Wed Jan 30 16:27:57 2013 -0800
+
+    2.0.2
+
+[33mcommit 6cc67524d911b4fa6b6a8343164782ad39ed1167[m
+Author: Pedro Burón <pedro@witoi.com>
+Date:   Tue Jan 29 19:25:08 2013 -0300
+
+    ROOT_URLCONF when wildcard subdomain
+
+[33mcommit efa2a12c74ca35217ab8f4cd709de5002a599da4[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Wed Jan 30 16:10:34 2013 -0800
+
+    Add failing test case for using non-default urlconfs.
+
+[33mcommit 7f4770409e1e56eee7d16b7b01fa7b5fdad3de90[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Mon Oct 1 22:51:11 2012 -0700
+
+    Don't quiet install Django in CI
+
+[33mcommit 82b64fc761a4b36c4eb3fcb3b804790bc6a610f6[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Mon Oct 1 22:47:05 2012 -0700
+
+    Quote Django version ranges.
+    
+    Avoids bash interpretation in Travis.
+
+[33mcommit 3f92b84ff488fba360a03a265794a524d28c8d9b[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Mon Oct 1 22:35:58 2012 -0700
+
+    "simplicitly" is not a word and other doc updates
+
+[33mcommit 18b7d39d07bfc69d5a1930a5a9cd9ba6be59bf32[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Mon Oct 1 22:28:05 2012 -0700
+
+    Add notes about master branch test to README.
+
+[33mcommit 9e034d39788c73147e360785041aee45b1b5053b[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Mon Oct 1 22:21:47 2012 -0700
+
+    Add notes about URL reversing behavior.
+    
+    Closes #13
+
+[33mcommit c5b4f3e675b247afa04da000c90c29d1afe79bca[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Mon Oct 1 22:07:21 2012 -0700
+
+    Fix Django dev release in `.travis.yml` (not editable)
+
+[33mcommit aba2b30f1421949ecea7619e1abc7a088e2b9725[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Mon Oct 1 22:06:03 2012 -0700
+
+    Test infrastructure updates (incl. Django dev releases)
+
+[33mcommit 0976f116c43a12dfed7d5af243b5eeac02f70cbb[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sun Sep 16 12:20:59 2012 -0700
+
+    Fix typo in docs.
+
+[33mcommit ce5e28e0464a42f7a9b7b74e22299cf1d4158195[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sun Sep 16 12:19:16 2012 -0700
+
+    Update ReadTheDocs link with short URL.
+
+[33mcommit 1ed364eb179ae69b5e24a050524cff531c1f5077[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sun Sep 16 12:14:12 2012 -0700
+
+    Add documentation.
+
+[33mcommit 7f28cd6af54c73150c9e904763f40413f3e4d50b[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sun Sep 16 02:35:33 2012 -0700
+
+    Add tox configuration.
+
+[33mcommit 2a8b94bac69c76d4cedfdf2a3d54751ae76ddf6c[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sun Sep 16 01:18:16 2012 -0700
+
+    setup.py packages tuple, you have failed me for the last time.
+
+[33mcommit 516aae75f81da7a88f7f3ec3b90abf63ab0df72a[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sun Sep 16 01:11:07 2012 -0700
+
+    Travis bump to fix orthogonal build issue.
+
+[33mcommit 463425686767c28ceb4a005d0d3d721098155ea4[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sun Sep 16 01:09:01 2012 -0700
+
+    Update documentation to match the removal of `USE_SUBDOMAIN_EXCEPTION`.
+
+[33mcommit ce5f129659691f58fc4be5b3b2b7e7358e943a7b[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sun Sep 16 00:04:35 2012 -0700
+
+    Version bump to 2.0
+
+[33mcommit 00e68c2da6db24dbefc93c096c1ef5f49a0cbe22[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sun Sep 16 00:03:00 2012 -0700
+
+    Add `make clean` to phony target list.
+
+[33mcommit 23ca15313fc5b466f60d4494d214af186bb4ffba[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sat Sep 15 23:54:35 2012 -0700
+
+    Documentation and assorted cleanup.
+
+[33mcommit 018b59d0fada068786094d1fb9d741fc01627c77[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sat Sep 15 22:20:10 2012 -0700
+
+    Fix RST syntax.
+
+[33mcommit bc6ac18d775b412dc37f946dc30c5a38b0519715[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sat Sep 15 22:18:52 2012 -0700
+
+    Move docs to ReStructured Text.
+
+[33mcommit 2a5ea163b0856569116d726bf8008c591b81c754[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sat Sep 15 22:04:30 2012 -0700
+
+    Allow overriding `get_domain` to remove `Site` dependency.
+    
+    Refs #11
+
+[33mcommit 9d6927a1ea89cd3af2145195490b2d037d81a27d[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sat Sep 15 21:44:49 2012 -0700
+
+    Lint fixes.
+
+[33mcommit ad679240ce4a8cbb1f2a039e3c5b36d74b8f0a85[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sat Sep 15 21:34:44 2012 -0700
+
+    Optionally import compatibility packages.
+
+[33mcommit ef1f81f4cfd558ffe9d7edda069b352226b61d89[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sat Sep 15 21:26:47 2012 -0700
+
+    Remove `assertRaises` context manager for 2.6 support.
+
+[33mcommit d0ebf3c65d634128257f146df845297a8730d0be[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sat Sep 15 21:22:44 2012 -0700
+
+    Fix compat import from f0f4e746ea1d7aca1840647e8b592212d446727d
+
+[33mcommit f0f4e746ea1d7aca1840647e8b592212d446727d[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sat Sep 15 21:21:37 2012 -0700
+
+    Backport `RequestFactory` for 1.2.X.
+
+[33mcommit ebca6259d8438001fa767b921a5a15a21c25ffa4[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sat Sep 15 21:08:04 2012 -0700
+
+    1.3.X compatibility.
+
+[33mcommit b7245c7839d4dd6c99da84e5442fbe8f3321697a[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sat Sep 15 20:50:05 2012 -0700
+
+    Backport simple_tag from 1.4.x.
+
+[33mcommit 87c122a4aed0ce3a4fea7836bdb24e45be6f8356[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sat Sep 15 19:59:36 2012 -0700
+
+    Add more build targets.
+
+[33mcommit c4f95a73cb4623f17158bf6565431560012f10d0[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sat Sep 15 19:57:12 2012 -0700
+
+    Add build status image.
+
+[33mcommit 8c89813e556ca4494c07cc884d84da941f32e984[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sat Sep 15 19:55:49 2012 -0700
+
+    Travis bump.
+
+[33mcommit 5c139eb38ec7f52db6009bdda8c95765c45dbca7[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sat Sep 15 19:52:13 2012 -0700
+
+    Add Travis CI configuration.
+
+[33mcommit a2082e319854f88842e3acf8244d38a81f7046ae[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sat Sep 15 19:45:24 2012 -0700
+
+    Add secure/insecure reverse helpers.
+
+[33mcommit 0c6548b8c018a6ac2ab7b8ea3ad5af680df01951[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sat Sep 15 19:40:54 2012 -0700
+
+    More test invariant enforcement.
+
+[33mcommit 4c74451c56e988c1c3ffd77dc5098c6aaf4ce1fd[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sat Sep 15 19:36:56 2012 -0700
+
+    Add implied subdomain routing based on request.
+
+[33mcommit c95f1516e63eac091c138955d77be0a1cf13b13e[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sat Sep 15 18:24:14 2012 -0700
+
+    Subdomain-based URL template tag.
+
+[33mcommit feda557a0776f51d07efd6bb8a4289e7ab10bcb0[m
+Merge: 98c5825 99124b6
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sat Sep 15 17:55:51 2012 -0700
+
+    Merge branch 'develop' into refactor
+    
+    Conflicts:
+    	subdomains/tests/tests.py
+    	subdomains/tests/urls/api.py
+    	subdomains/tests/urls/application.py
+
+[33mcommit 98c58257af05ce31b4e79eabb4ecde901ba602bc[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Sat Sep 15 16:51:39 2012 -0700
+
+    Overhaul test infrastructure.
+
+[33mcommit 99124b6d26bd77bf905d1265f216a166353d5fa4[m
+Merge: 5850f9f 65bf9fd
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Mon Sep 10 23:41:58 2012 -0700
+
+    Merge branch 'master' into develop
+    
+    Conflicts:
+    	tests/example/tests.py
+    	tests/example/urls/api.py
+    	tests/example/urls/application.py
+    	tests/example/urls/default.py
+
+[33mcommit 65bf9fd88aa5fd52be2781cf06a150c138ed4b27[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Mon Sep 10 23:29:51 2012 -0700
+
+    More basic lint fixes.
+
+[33mcommit ef90d370b1f08689b9bf4a041ba5fb7ac696c290[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Mon Sep 10 23:26:06 2012 -0700
+
+    Fix `make publish`.
+
+[33mcommit 1d19b907a1414ce541d547f12f110018897f3f9b[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Mon Sep 10 23:24:07 2012 -0700
+
+    Version bump to 1.2.2
+
+[33mcommit 04072c17689cbda48917bee35e3389bd1f0979f9[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Mon Sep 10 23:15:05 2012 -0700
+
+    Add debug logging for subdomain urlconfs.
+
+[33mcommit d601d687fcb202e41526b8970837d85aac711e3e[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Mon Sep 10 22:33:03 2012 -0700
+
+    Lint fix.
+
+[33mcommit 60fb1a9508a6c2fbee1c4a70c1c957ab27781634[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Mon Sep 10 22:24:26 2012 -0700
+
+    Add test for #8.
+    
+    Also included:
+    * adds `django` to `setup.py` requirements for `setup.py develop`.
+    * fixes bad imports in test application urlconfs
+
+[33mcommit 5850f9fc7060e84a8859768e269db87214de9694[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Wed Jul 4 13:33:12 2012 -0700
+
+    Add `reverse` helper for reversing subdomain URLs.
+
+[33mcommit d595959a8bce8ff9605c42f367c02a91340e9a05[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Wed Jul 4 12:56:43 2012 -0700
+
+    Remove trailing whitespace.
+
+[33mcommit 8ccf13d0f44503289ba8479172b0cbb8f0ca1cb7[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Thu Apr 26 13:30:35 2012 -0700
+
+    fix stale header in documentation
+
+[33mcommit b1765eac6780c6a6dd457a49b9f1b9d1a7b53e7b[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Thu Apr 26 13:27:43 2012 -0700
+
+    add MIT license
+
+[33mcommit 4dc5c0c23ed1950fc01272825b4acb66d07eefd6[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Thu Apr 26 13:18:35 2012 -0700
+
+    add publish command to makefile for convenience
+
+[33mcommit 338ee62bed667891e399602ed2da5922618ce612[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Thu Apr 26 13:15:12 2012 -0700
+
+    update documentation
+
+[33mcommit bb230b8f041dae33c0ba99891a2462d733e2c4be[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Thu Apr 26 13:08:56 2012 -0700
+
+    version bump to 1.2.0
+
+[33mcommit 9d2a7aa9b18dd9f225e521f3436848d9b83eb5be[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Thu Apr 26 13:08:20 2012 -0700
+
+    lexicographically sort import order in middleware
+
+[33mcommit 20fa5463879acc1fa75b6d2d5f2058ad5dbe63e7[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Thu Apr 26 13:05:18 2012 -0700
+
+    use case insensitive comparison for site and host
+    
+    closes #6
+
+[33mcommit 1c6ba772e4eec8af45634511ee3b239dd602d978[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Thu Apr 26 12:59:04 2012 -0700
+
+    add tests for subdomain-based urlconfs
+
+[33mcommit 4ab48cc77389adb23ef71442a4249b3c62fa5c98[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Thu Apr 26 12:47:14 2012 -0700
+
+    subdomains/settings.py is no longer necessary
+
+[33mcommit ef7383ffaad5c681efbc283d5c7214e52fbd7375[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Thu Apr 26 12:45:17 2012 -0700
+
+    more illustrative test cases for REMOVE_WWW_FROM_DOMAIN
+
+[33mcommit 3fec51ec8324acf7a66dd042337e4d901a83f01d[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Thu Apr 26 12:42:37 2012 -0700
+
+    basic test cases for subdomain middleware
+
+[33mcommit 244e1ff01cd790db3b7575896e83eaf8b63471b9[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Thu Apr 26 12:23:39 2012 -0700
+
+    REMOVE_WWW_FROM_SUBDOMAIN is a poor setting name, replacing with REMOVE_WWW_FROM_DOMAIN
+
+[33mcommit e783c382886d92e020c12cc051d1f8fff82ad458[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Thu Apr 26 12:00:51 2012 -0700
+
+    test stubs
+
+[33mcommit 5aa67a5d78610d11a5e8956a545bedf40dffe5cb[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Thu Apr 26 11:48:40 2012 -0700
+
+    add django to dependencies for testing
+
+[33mcommit 4e0a7a2f3ef5fe4438282efabf3a6dbdd7c53120[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Thu Apr 26 11:43:46 2012 -0700
+
+    streamline install process
+
+[33mcommit 1db62ec41ba6d5f2b5a58b458459bb503656f865[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Thu Apr 26 11:39:51 2012 -0700
+
+    code style cleanup
+
+[33mcommit a652c0ae39f3ea15c4022cc977d9af7a5330a5bb[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Tue Nov 15 16:36:52 2011 -0800
+
+    setup.py changes for pypi
+
+[33mcommit ef4b7b42662a151392b4008209b774eac6f215ba[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Mon Nov 15 02:47:12 2010 +0900
+
+    updated docs
+
+[33mcommit 20db658bb3a036736cc1ac8941cb16c574bf60cf[m
+Author: Jannis Leidel <jannis@leidel.info>
+Date:   Sun Nov 7 22:00:50 2010 +0100
+
+    Bumped version.
+
+[33mcommit 20202e508e6294ca3670056e2817324954440e40[m
+Author: Jannis Leidel <jannis@leidel.info>
+Date:   Sun Nov 7 21:55:11 2010 +0100
+
+    Added option to specially handle 'www.' subdomains (REMOVE_WWW_FROM_SUBDOMAIN setting) which might be set as the domain of the default Site.
+
+[33mcommit 5e50575fbb6bb0ea47d64103af309472da6d0128[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Fri Jun 18 16:07:18 2010 -0500
+
+    the default failure option is now warnings instead of exceptions, see README for notes
+    
+    if you'd like to still use exceptions for some custom behavior, there is now a USE_SUBDOMAIN_EXCEPTION setting that will cause exceptions to be raised rather than warnings
+
+[33mcommit 6c66ed4071a941594287f7379d2a8f5194a8c4dd[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Tue May 18 12:40:36 2010 -0500
+
+    proof-of-concept for site warnings instead of raising an exception
+
+[33mcommit 557127ff2760e50f444953ac252ca01b031ddb4f[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Wed May 12 15:01:21 2010 -0500
+
+    added process_response method to middleware that forces the "Vary" header to avoid caching across subdomains
+    
+    thanks to john boxall (http://twitter.com/johnboxall) for the tip!
+
+[33mcommit aa319eb6f3d81b16015755dc9c63aba3dc7e8da9[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Tue May 11 23:17:30 2010 -0500
+
+    added IncorrectSiteException to provide a better error message when SITE_ID is not configured properly
+
+[33mcommit 03ce6834e3ff04f62e737ed4c114dfd1ab0819ef[m
+Author: Ted Kaemming <ted@kaemming.com>
+Date:   Tue May 11 22:36:02 2010 -0500
+
+    initial commit of django-subdomains
